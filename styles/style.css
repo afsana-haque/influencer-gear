@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*  Header start */
+.header{
+   margin: 85px 120px;
+   background-image: url(../images/Circle\ design.svg);
+   background-repeat: no-repeat;
+   background-position: right;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+nav h1{
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*  Header end */
+
+/* banner start */
+.banner{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 52px;
+    color: #3A3A3A;
+    margin-bottom: 12px;
+}
+.banner-deseription{
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 128px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.banner-btn{
+    width: 199px;
+    padding: 10px 24px;
+    height: 44px;
+    background: #E02C6D;
+    border-radius: 41px;
+}
+.banner-btn > a{
+    font-weight: 700;
+   font-size: 16px;
+   color: #fff;
+   text-decoration: none;
+}
+/* banner end */
+
+/* banner-logo start  */
+.banner-logo{
+    width: 1110px;
+    height: 110px;
+    box-shadow: 0px 6px 15px #AAAAAA;
+    margin-top: 220px;
+    border-radius: 5px;
+}
+.logo-item{
+    display: flex; 
+    justify-content: space-between;
+}
+.logo-item img{
+    margin-top: 40px;
+    padding: 0 30px;
+}
+/* banner-logo end */
+
+/* Popular Collection start */
+.container{
+    margin: 105px 120px;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+    margin-bottom: 82px;
+    text-align: center;
+}
+.populars{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.popular{
+    width: 329px;
+   height: 476px;
+   background: #FFFFFF;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   padding-bottom: 20px;
+}
+.popular-detail, .popular-banner{
+    padding: 10px 14px;
+}
+
+.popular-title{
+    font-weight: 500;
+   font-size: 28px;
+   color: #18191F;
+   margin-bottom: 5px;
+}
+.popular-info{
+ 
+}
+.fa-star{
+    color:#FFC014;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.popular-deseription{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+    margin-bottom: 7px;
+}
+
+.see-more{
+   text-align: right;
+   margin-top: 58px;
+}
+.see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    font-size: 16px; 
+}
+/* Popular Collection end */
+
+/* Featured products at one place start  */
+.featured{
+    margin: 105px 120px;
+}
+.feature{
+    display: flex;
+    gap: 75px;
+}
+.feature-content h2{
+    color: #0A0826;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+.feature-content p{
+    color: #6C6C6C;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    padding-right: 120px;
+    margin-bottom: 25px;
+}
+.feature-btn{
+    background: #E02C6D;
+    width: 155px;
+    height: 44px;
+    padding: 10px 24px;
+}
+.feature-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Featured products at one place end */
+
+/* footer start */
+.footer{
+    margin-top: 120px;
+    background-color: #0A0826;
+    padding-bottom: 38px;
+}
+.footer-content{
+    
+}
+.footer-content h3{
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 6px;
+}
+.footer-content p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+    text-align: center;
+}
+.footer-icon{
+    text-align: center;
+    padding-top: 15px;
+}
+.footer-icon a{
+    color: #FFFFFF;
+    padding-left: 10px;
+
+}
+/* footer end */
+
+/* --------------- Media Queries-------------- */
+
+/* Mobile Device */
+@media only screen and (max-width: 688px){
+    .header{
+        width: 100%;
+        margin: 0px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
